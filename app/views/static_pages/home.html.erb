@@ -1,0 +1,15 @@
+<% provide :title, t(".namepage") %>
+<div class="center jumbotron">
+  <h1><%= t ".wellcome" %></h1>
+  
+  <h2>
+    <%= t ".thisis" %>
+    <%= link_to t(".namelink"), "http://www.railstutorial.org/" %>
+    <%= t ".sample" %>
+  </h2>
+
+  <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag("rails.png", alt: "Rails logo"),
+  "http://rubyonrails.org/" %>
+<%= image_tag("kitten.jpg", alt: "Cat logo") %>
