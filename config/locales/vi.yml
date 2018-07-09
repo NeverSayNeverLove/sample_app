@@ -1,0 +1,23 @@
+vi:
+  static_pages:
+    home:
+      title: "Xin chào anh Thủy"
+      namepage: "Trang chủ"
+      namelink: "Hướng dẫn Ruby on Rails"
+      desription: "Đây là trang chủ của web"
+    help:
+      title: "Xin chào anh Thủy"
+      namepage: "Trợ giúp"
+      book: "Cuốn sách về Ruby on Rails"
+      desription: "Đây là trang trợ giúp của web"
+    about:
+      title: "Xin chào anh Thủy"
+      namepage: "Giới thiệu"
+      namelink: "Hướng dẫn Ruby on Rails"
+      book: "Cuốn sách về Ruby on Rails"
+      desription: "Đây là trang giới thiệu của web"
+    contact:
+      title: "Xin chào anh Thủy"
+      namepage: "Liên hệ"
+      desription: "Đây là trang liên hệ của web"
+      contactpage: "Trang liên hệ"

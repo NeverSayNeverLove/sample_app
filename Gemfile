@@ -9,6 +9,10 @@ gem "sass-rails", "~> 5.0"
 gem "sqlite3"
 gem "uglifier", ">= 1.3.0"
 
+gem "coffee-rails", "~> 4.2"
+gem "jbuilder", "~> 2.5"
+gem "turbolinks"
+
 gem "bootsnap", ">= 1.1.0", require: false
 
 group :development, :test do
@@ -23,4 +27,5 @@ group :development do
   gem "web-console", ">= 3.3.0"
 end
 
+gem "rails-i18n"
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
