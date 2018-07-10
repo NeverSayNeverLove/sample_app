@@ -1,10 +1,14 @@
 vi:
   static_pages:
     home:
+      thisis: "Đây là trang chủ của"
+      sample: "ứng dụng."
       title: "Xin chào anh Thủy"
       namepage: "Trang chủ"
       namelink: "Hướng dẫn Ruby on Rails"
       desription: "Đây là trang chủ của web"
+      signup: "Sign up now!"
+      wellcome: "Chào mừng các bạn đến với trang web"
     help:
       title: "Xin chào anh Thủy"
       namepage: "Trợ giúp"
@@ -21,3 +25,15 @@ vi:
       namepage: "Liên hệ"
       desription: "Đây là trang liên hệ của web"
       contactpage: "Trang liên hệ"
+  layouts:
+    footer:
+      namelink: "Hướng dẫn Ruby on Rails"
+      author: "Michael Hartl"
+      about: "Giới thiệu"
+      contact: "Liên hệ"
+      news: "Tin tức"
+    header:
+      title: "Ứng dụng ví dụ"
+      home: "Trang chủ"
+      help: "Giúp đỡ"
+      login: "Đăng nhập"
