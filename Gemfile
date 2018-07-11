@@ -28,6 +28,6 @@ group :development do
   gem "web-console", ">= 3.3.0"
 end
 
+gem "config"
 gem "rails-i18n"
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem "config"
