@@ -1,3 +1,7 @@
-max:
+maximum:
   email_len: 255
   name_len: 50
+image:
+  size: 80
+minimum:
+  password: 6

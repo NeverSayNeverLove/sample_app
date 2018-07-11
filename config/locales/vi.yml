@@ -37,3 +37,15 @@ vi:
       home: "Trang chủ"
       help: "Giúp đỡ"
       login: "Đăng nhập"
+  controller:  
+    user:
+      new:
+        signup: "Đăng kí"
+      create:
+        wellcome: "Welcome to the Sample App!"
+        error: "Lỗi không thể lưu được user"
+      show:
+        notfind: "Không tìm thấy user"
+  view:
+    share:
+      error: "Error!"
