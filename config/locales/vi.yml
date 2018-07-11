@@ -7,7 +7,7 @@ vi:
       namepage: "Trang chủ"
       namelink: "Hướng dẫn Ruby on Rails"
       desription: "Đây là trang chủ của web"
-      signup: "Sign up now!"
+      signup: "Đăng ký ngay"
       wellcome: "Chào mừng các bạn đến với trang web"
     help:
       title: "Xin chào anh Thủy"
@@ -33,19 +33,31 @@ vi:
       contact: "Liên hệ"
       news: "Tin tức"
     header:
-      title: "Ứng dụng ví dụ"
+      title: "Ứng dụng"
       home: "Trang chủ"
       help: "Giúp đỡ"
       login: "Đăng nhập"
+      logout: "Đăng xuất"
+      setting: "Cài đặt"
+      profile: "Hồ sơ"
+      user: "Người dùng"
+      account: "Tài khoản"
   controller:  
     user:
       new:
-        signup: "Đăng kí"
+        signup: "Đăng kí ngay"
       create:
         wellcome: "Welcome to the Sample App!"
         error: "Lỗi không thể lưu được user"
       show:
         notfind: "Không tìm thấy user"
+    session:
+      create:
+        can_not_login: "Sai email hoặc mật khẩu"
   view:
     share:
       error: "Error!"
+    session:
+      new:
+        login: "Đăng Nhập"
+        signup: "Đăng kí ngay"
