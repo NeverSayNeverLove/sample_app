@@ -29,5 +29,6 @@ group :development do
 end
 
 gem "config"
+gem "jquery-rails"
 gem "rails-i18n"
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
