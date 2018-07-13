@@ -1,0 +1,6 @@
+<h1><%= t "static_pages.layouts.header.app_name" %></h1>
+<p><%= t "view.user_mailer.acc_acti.hi" %> <%= @user.name %>,</p>
+<p><%= t "view.user_mailer.acc_acti.mail_message" %></p>
+<%= link_to t("view.user_mailer.acc_acti.activate"), edit_account_activation_url(@user.activation_token,
+  email: @user.email) %>
+  
