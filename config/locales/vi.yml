@@ -51,6 +51,12 @@ vi:
         error: "Lỗi không thể lưu được user"
       show:
         notfind: "Không tìm thấy user"
+      update:
+        updated: "Đã được cập nhật"
+      logged:
+        please_loggin: "Hãy đăng nhập"
+      destroy:
+        deleted: "Đã xóa"
     session:
       create:
         can_not_login: "Sai email hoặc mật khẩu"
@@ -61,4 +67,14 @@ vi:
       new:
         login: "Đăng Nhập"
         signup: "Đăng kí ngay"
-        remember: "Remember me on this computer"
+        remember: "Lưu tài khoản"
+    user:
+      edit: "Thiết lập"
+      update_message: "Cập nhật profile"
+      save_change: "Lưu thay đổi"
+      create_account: "Tạo tài khoản"
+      signup: "Đăng kí"
+      gravatar: "change"
+      index: "Tất cả người dùng"
+      delete: "Xóa"
+      confirm: "Bạn chắc chắn muốn xóa tài khoản này?"
