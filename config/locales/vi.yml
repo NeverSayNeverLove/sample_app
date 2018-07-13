@@ -67,6 +67,14 @@ vi:
     acc_acti:
       activated: "kích hoạt thành công"
       invalid_activation_link: "Link không khả dụng"
+    password:
+      create:
+        email_notfound: "Không tìm thấy email"
+        email_with_resetpass: "Email đã được gửi kèm cùng reset_password"
+      update:
+        pass_reseted: "Mật khẩu đã được cập nhật"
+      check_expiration:
+        expired: "Mật khẩu đã hết hạn"
   view:
     share:
       error: "Error!"
@@ -80,6 +88,9 @@ vi:
       new:
         title: "Quên mật khẩu"
         submit: "Gửi"
+      edit:
+        reset_pass: "Cài đặt lại mật khẩu"
+        update_pass: "Cập nhật mật khẩu"
     user:
       edit: "Thiết lập"
       update_message: "Cập nhật profile"
@@ -95,6 +106,11 @@ vi:
         hi: "xin chào!"
         mail_message: "Chào mừng đến với thế giới của Framgia"
         activate: "Kích hoạt"
+      pass_reset:
+        reset_pass: "Cài đặt lại mật khẩu"
+        description1: "Nhấn vào link dưới để reset lại mật khẩu:"
+        description2: "Link sẽ có hiệu lực trong 2 giờ, nếu không yêu cầu cài lại mật khẩu hãy bỏ qua."
   mailer:
     user_mailer:
       subject: "Kích hoạt tài khoản"
+      password_reset: "Cài đặt lại mật khẩu"
