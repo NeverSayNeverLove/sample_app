@@ -26,8 +26,9 @@ class UsersController < ApplicationController
   end
 
   def show
-    return if @user&.activated
-    redirect_to root_path
+    return redirect_to root_path unless @user&.activated
+    @microposts = @user.microposts.paginate page: params[:page],
+      per_page: Settings.paginate.per_page
   end
 
   def edit; end
@@ -52,7 +53,7 @@ class UsersController < ApplicationController
   end
 
   private
-  
+
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation

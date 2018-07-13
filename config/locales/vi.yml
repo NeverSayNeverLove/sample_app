@@ -91,7 +91,6 @@ vi:
       micro: "micropost"
       post: "Gửi"
       compose_new_micro: "Tạo ra micropost mới..."
-      alert: "Kích cỡ tối đa của ảnh là 5MB, hãy chọn ảnh có kích cỡ nhỏ hơn"
     session:
       new:
         login: "Đăng Nhập"

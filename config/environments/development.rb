@@ -45,6 +45,8 @@ Rails.application.configure do
     password: ENV["GMAIL_PASSWORD"]
   }
 
+  config.middleware.use I18n::JS::Middleware
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
