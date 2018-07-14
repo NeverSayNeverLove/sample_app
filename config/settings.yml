@@ -5,3 +5,6 @@ image:
   size: 80
 minimum:
   password: 6
+gravatar:
+  size: 50
+  
