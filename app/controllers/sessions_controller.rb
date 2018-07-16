@@ -24,6 +24,7 @@ class SessionsController < ApplicationController
   end
 
   private
+  
   def remember_user user
     params[:session][:remember_me] == "1" ? remember(user) : forget(user)
   end

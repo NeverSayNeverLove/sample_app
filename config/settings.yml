@@ -9,3 +9,5 @@ gravatar:
   size: 50
 paginate:
   per_page: 10
+password:
+  expired: 2
