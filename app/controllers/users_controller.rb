@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_action :find_by, only: [:show, :edit, :update, :correct_user, :destroy]
 
   def index
-    @users = User.paginate page: params[:page],
+    @users = User.where(activated: true).paginate page: params[:page],
       per_page: Settings.paginate.per_page
   end
 
@@ -16,9 +16,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "controller.user.create.wellcome"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "controller.user.create.check_email"
+      redirect_to root_url
     else
       flash[:danger] = t "controller.user.create.error"
       render :new
@@ -26,8 +26,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    return if @user
-    flash[:danger] = t "controller.user.show.notfind"
+    return if @user&.activated
     redirect_to root_path
   end
 
@@ -74,6 +73,8 @@ class UsersController < ApplicationController
   end
 
   def find_by
-    @users = User.paginate page: params[:page]
+    @user = User.find_by id: params[:id]
+    return if @user
+    flash[:danger] = t "controller.user.find_by.cannot_find"
   end
 end

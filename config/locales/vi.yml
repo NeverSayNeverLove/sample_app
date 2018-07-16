@@ -42,6 +42,7 @@ vi:
       profile: "Hồ sơ"
       user: "Người dùng"
       account: "Tài khoản"
+      app_name: "Framgia Japan"
   controller:  
     user:
       new:
@@ -49,17 +50,23 @@ vi:
       create:
         wellcome: "Welcome to the Sample App!"
         error: "Lỗi không thể lưu được user"
-      show:
-        notfind: "Không tìm thấy user"
+        check_email: "xin hãy kiểm tra email của bạn."
       update:
         updated: "Đã được cập nhật"
       logged:
         please_loggin: "Hãy đăng nhập"
       destroy:
         deleted: "Đã xóa"
+        delete_false: "Xóa thất bại"
+      find_by:
+        cannot_find: "Không tìm thấy tài khoản"
     session:
       create:
         can_not_login: "Sai email hoặc mật khẩu"
+        cannot_activated: "Tài khoản chưa được kích hoạt. Kiểm tra emial của bạn"
+    acc_acti:
+      activated: "kích hoạt thành công"
+      invalid_activation_link: "Link không khả dụng"
   view:
     share:
       error: "Error!"
@@ -68,6 +75,11 @@ vi:
         login: "Đăng Nhập"
         signup: "Đăng kí ngay"
         remember: "Lưu tài khoản"
+        forgot_password: "Quên mật khẩu"
+    password:
+      new:
+        title: "Quên mật khẩu"
+        submit: "Gửi"
     user:
       edit: "Thiết lập"
       update_message: "Cập nhật profile"
@@ -78,3 +90,11 @@ vi:
       index: "Tất cả người dùng"
       delete: "Xóa"
       confirm: "Bạn chắc chắn muốn xóa tài khoản này?"
+    user_mailer:
+      acc_acti:
+        hi: "xin chào!"
+        mail_message: "Chào mừng đến với thế giới của Framgia"
+        activate: "Kích hoạt"
+  mailer:
+    user_mailer:
+      subject: "Kích hoạt tài khoản"
