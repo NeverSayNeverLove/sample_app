@@ -1,2 +1,3 @@
 en:
   hello: "Hello world"
+  alert: "Kích cỡ tối đa của ảnh là 5MB, hãy chọn ảnh có kích cỡ nhỏ hơn"

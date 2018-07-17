@@ -16,5 +16,5 @@ micro:
   size: 50
 pic:
   size: 50
-  sizemb: 5
   limit: 400
+  sizemb: 5
