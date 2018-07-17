@@ -6,6 +6,8 @@
 $gray-medium-light: #eaeaea;
 $white: #fff;
 $red: red;
+$white1: #e8e8e8;
+$white2: #bbb;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -164,7 +166,7 @@ aside {
 /* forms */
 
 input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
+  border: 1px solid $white2;
   width: 100%;
   margin-bottom: 15px;
   @include box_sizing;

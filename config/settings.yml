@@ -11,3 +11,10 @@ paginate:
   per_page: 10
 password:
   expired: 2
+micro:
+  content: 140
+  size: 50
+pic:
+  size: 50
+  sizemb: 5
+  limit: 400

@@ -9,6 +9,7 @@ vi:
       desription: "Đây là trang chủ của web"
       signup: "Đăng ký ngay"
       wellcome: "Chào mừng các bạn đến với trang web"
+      feed: "Tin tức Micropost"
     help:
       title: "Xin chào anh Thủy"
       namepage: "Trợ giúp"
@@ -60,6 +61,12 @@ vi:
         delete_false: "Xóa thất bại"
       find_by:
         cannot_find: "Không tìm thấy tài khoản"
+    micro:
+      create:
+        created: "Micropost đã được tạo"
+      destroy:
+        deleted: "Đã xóa micropost"
+        deleted_false: "Không thể xóa micropost"
     session:
       create:
         can_not_login: "Sai email hoặc mật khẩu"
@@ -75,9 +82,16 @@ vi:
         pass_reseted: "Mật khẩu đã được cập nhật"
       check_expiration:
         expired: "Mật khẩu đã hết hạn"
+    app:
+      login: "Xin hãy đăng nhập."
   view:
     share:
       error: "Error!"
+      profile: "Xem hồ sơ cá nhân"
+      micro: "micropost"
+      post: "Gửi"
+      compose_new_micro: "Tạo ra micropost mới..."
+      alert: "Kích cỡ tối đa của ảnh là 5MB, hãy chọn ảnh có kích cỡ nhỏ hơn"
     session:
       new:
         login: "Đăng Nhập"
@@ -101,6 +115,7 @@ vi:
       index: "Tất cả người dùng"
       delete: "Xóa"
       confirm: "Bạn chắc chắn muốn xóa tài khoản này?"
+      microposts: "Microposts:"
     user_mailer:
       acc_acti:
         hi: "xin chào!"
@@ -110,7 +125,14 @@ vi:
         reset_pass: "Cài đặt lại mật khẩu"
         description1: "Nhấn vào link dưới để reset lại mật khẩu:"
         description2: "Link sẽ có hiệu lực trong 2 giờ, nếu không yêu cầu cài lại mật khẩu hãy bỏ qua."
+    micropost:
+      posted: "Đã đăng lúc"
+      delete: "Xóa"
+      sure: "Bạn có chắc chắn muốn xóa?"
   mailer:
     user_mailer:
       subject: "Kích hoạt tài khoản"
       password_reset: "Cài đặt lại mật khẩu"
+  model:
+    micro:
+      picsize: "kích cỡ cần nhỏ hơn 5MB"
