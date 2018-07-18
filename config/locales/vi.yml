@@ -61,6 +61,10 @@ vi:
         delete_false: "Xóa thất bại"
       find_by:
         cannot_find: "Không tìm thấy tài khoản"
+      following:
+        title: "Đang theo dõi"
+      followers:
+        title: "Người theo dõi"
     micro:
       create:
         created: "Micropost đã được tạo"
@@ -91,6 +95,8 @@ vi:
       micro: "micropost"
       post: "Gửi"
       compose_new_micro: "Tạo ra micropost mới..."
+      following: "Đang theo dõi"
+      follower: "Người theo dõi"
     session:
       new:
         login: "Đăng Nhập"
@@ -115,6 +121,8 @@ vi:
       delete: "Xóa"
       confirm: "Bạn chắc chắn muốn xóa tài khoản này?"
       microposts: "Microposts:"
+      follow: "Theo dõi"
+      unfollow: "Bỏ theo dõi"
     user_mailer:
       acc_acti:
         hi: "xin chào!"
