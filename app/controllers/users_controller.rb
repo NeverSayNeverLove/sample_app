@@ -1,8 +1,10 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: [:edit, :update, :destroy]
+  before_action :logged_in_user, only: [:edit, :update, :destroy,
+    :following, :followers]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
-  before_action :find_by, only: [:show, :edit, :update, :correct_user, :destroy]
+  before_action :find_by, only: [:show, :edit, :update, :correct_user,
+    :destroy]
 
   def index
     @users = User.where(activated: true).paginate page: params[:page],
@@ -50,6 +52,22 @@ class UsersController < ApplicationController
       flash[:warning] = t "controller.user.update.update_false"
       redirect_to root_path
     end
+  end
+
+  def following
+    @title = t "controller.following.title"
+    @user  = User.find_by id: params[:id])
+    @users = @user.following.paginate page: params[:page],
+      per_page: Settings.paginate.per_page
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "controller.follower.title"
+    @user  = User.find_by id: params[:id]
+    @users = @user.followers.paginate page: params[:page],
+      per_page: Settings.paginate.per_page
+    render "show_follow"
   end
 
   private

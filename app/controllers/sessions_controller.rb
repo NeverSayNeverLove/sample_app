@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by email: params[:session][:email].downcase
     if user&.authenticate params[:session][:password]
-      activation
+      activation user
     else
       flash.now[:danger] = t "controller.session.create.can_not_login"
       render :new
@@ -22,7 +22,7 @@ class SessionsController < ApplicationController
     params[:session][:remember_me] == "1" ? remember(user) : forget(user)
   end
 
-  def activation
+  def activation user
     if user.activated?
       log_in user
       remember_user user
